@@ -94,10 +94,40 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
         with:
           source-repo: "git@github.com:jiutianhuanpei/HBTools.git"
-          destination-repo: "git@gitee.com:jiutianhuanpei/HBTools.git"  
+          destination-repo: "git@gitee.com:jiutianhuanpei/HBTools.git" 
 
+                   
+      - name: Sync SQLite.swift
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
+        with:
+          source-repo: "git@github.com:stephencelis/SQLite.swift.git"
+          destination-repo: "git@gitee.com:jiutianhuanpei/SQLite.swift.git"            
 
+      - name: Sync Charts
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
+        with:
+          source-repo: "git@github.com:danielgindi/Charts.git"
+          destination-repo: "git@gitee.com:jiutianhuanpei/Charts.git"            
 
+      - name: Sync Koloda
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
+        with:
+          source-repo: "git@github.com:danielgindi/Charts.git"
+          destination-repo: "git@gitee.com:jiutianhuanpei/Koloda.git"            
+
+      - name: Sync GPUImage2
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
+        with:
+          source-repo: "git@github.com:BradLarson/GPUImage2.git"
+          destination-repo: "git@gitee.com:jiutianhuanpei/GPUImage2.git"            
 
 
 
