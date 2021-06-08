@@ -118,7 +118,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
         with:
-          source-repo: "git@github.com:danielgindi/Charts.git"
+          source-repo: "git@github.com:Yalantis/Koloda.git"
           destination-repo: "git@gitee.com:jiutianhuanpei/Koloda.git"            
 
       - name: Sync GPUImage2
