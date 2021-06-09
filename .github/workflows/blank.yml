@@ -129,6 +129,13 @@ jobs:
           source-repo: "git@github.com:BradLarson/GPUImage2.git"
           destination-repo: "git@gitee.com:jiutianhuanpei/GPUImage2.git"            
 
+      - name: Sync SwiftyJSON
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
+        with:
+          source-repo: "git@github.com:SwiftyJSON/SwiftyJSON.git"
+          destination-repo: "git@gitee.com:jiutianhuanpei/SwiftyJSON.git" 
 
 
 
